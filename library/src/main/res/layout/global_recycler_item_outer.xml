@@ -7,7 +7,7 @@
         android:id="@+id/plan_time_txt_month"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:gravity="center"
         android:paddingRight="30dp"
         android:text="2018年3月"

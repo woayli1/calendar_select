@@ -14,6 +14,12 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.woayli1.library.adapter.OuterRecycleAdapter;
+import com.woayli1.library.callback.CalendarSelectUpdateCallback;
+import com.woayli1.library.callback.ConfirmSelectDateCallback;
+import com.woayli1.library.entity.DayTimeEntity;
+import com.woayli1.library.entity.MonthTimeEntity;
+
 import java.util.Calendar;
 import java.util.Map;
 
@@ -25,34 +31,34 @@ public class CalendarSelectView extends LinearLayout {
 
     private Context context;
 
-    public static       String START_TIME_KEY = "startTime";
-    public static       String END_TIME_KEY   = "endTime";
-    public static final int    SINGLE         = 1;
-    public static final int    MULT           = 2;
+    public static String START_TIME_KEY = "startTime";
+    public static String END_TIME_KEY = "endTime";
+    public static final int SINGLE = 1;
+    public static final int MULT = 2;
 
     private final int START = 0;
     private final int TODAY = 1;
-    private final int END   = 2;
+    private final int END = 2;
 
 
-    private TextView            leftTime;
-    private TextView            rightTime;
-    private RecyclerView        recyclerView;
-    private TextView            define;
-    private LinearLayout        timeParent;
-    private TextView            clear;
-    private TextView            confirm;
+    private TextView leftTime;
+    private TextView rightTime;
+    private RecyclerView recyclerView;
+    private TextView define;
+    private LinearLayout timeParent;
+    private TextView clear;
+    private TextView confirm;
     private OuterRecycleAdapter outAdapter;
 
     private int selectType;
     private int locationType;
 
-    Calendar          startCalendar;
-    Calendar          endCalendar;
-    Calendar          startCalendarDate;
-    Calendar          endCalendarDate;
-    DayTimeEntity     startDayTime;
-    DayTimeEntity     endDayTime;
+    Calendar startCalendar;
+    Calendar endCalendar;
+    Calendar startCalendarDate;
+    Calendar endCalendarDate;
+    DayTimeEntity startDayTime;
+    DayTimeEntity endDayTime;
     GridLayoutManager layoutManager;
 
     private ConfirmSelectDateCallback selectDateCallback;
@@ -277,7 +283,7 @@ public class CalendarSelectView extends LinearLayout {
         }
 
         updateMultView();
-        if (outAdapter != null){
+        if (outAdapter != null) {
             outAdapter.notifyDataSetChanged();
             outAdapter.scrollToLocation();
         }

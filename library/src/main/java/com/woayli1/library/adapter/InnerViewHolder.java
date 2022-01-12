@@ -1,4 +1,4 @@
-package com.woayli1.library;
+package com.woayli1.library.adapter;
 
 import android.graphics.Color;
 import android.view.View;
@@ -6,6 +6,11 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.woayli1.library.R;
+import com.woayli1.library.R2;
+import com.woayli1.library.Util;
+import com.woayli1.library.entity.DayTimeEntity;
 
 import java.util.Calendar;
 
@@ -19,18 +24,18 @@ import butterknife.ButterKnife;
 public class InnerViewHolder extends RecyclerView.ViewHolder {
 
     @BindView(R2.id.left_view)
-    View     leftView;
+    View leftView;
     @BindView(R2.id.right_view)
-    View     rightView;
+    View rightView;
     @BindView(R2.id.date)
     TextView date;
     @BindView(R2.id.dot)
-    View     dot;
+    View dot;
 
-    Calendar      startCalendarDate;
-    Calendar      endCalendarDate;
-    Calendar      tempCalendar;
-    Calendar      todayCalendar;
+    Calendar startCalendarDate;
+    Calendar endCalendarDate;
+    Calendar tempCalendar;
+    Calendar todayCalendar;
     DayTimeEntity startDayTime;
     DayTimeEntity endDayTime;
 
@@ -70,11 +75,7 @@ public class InnerViewHolder extends RecyclerView.ViewHolder {
 
     private void responseInner(DayTimeEntity dayTimeEntity) {
         itemView.setEnabled(true);
-        if (tempCalendar.getTimeInMillis() == todayCalendar.getTimeInMillis()) {
-            setSelectItemBg(dayTimeEntity, true);
-        } else {
-            setSelectItemBg(dayTimeEntity, false);
-        }
+        setSelectItemBg(dayTimeEntity, tempCalendar.getTimeInMillis() == todayCalendar.getTimeInMillis());
     }
 
     private void responseDayIsZero(DayTimeEntity dayTimeEntity) {

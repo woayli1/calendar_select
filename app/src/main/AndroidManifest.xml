@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name="com.woayli1.calendar.CalendarSelectAcitivity"
+            android:name="com.woayli1.calendar.CalendarSelectActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />

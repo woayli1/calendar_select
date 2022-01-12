@@ -6,15 +6,16 @@ import android.text.TextUtils;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CalendarSelectAcitivity extends AppCompatActivity {
+public class CalendarSelectActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String flag = getIntent().getStringExtra("flag");
-        if(TextUtils.equals(flag, "single"))
+        if (TextUtils.equals(flag, "single")) {
             setContentView(R.layout.select_date_single);
-        else
+        } else {
             setContentView(R.layout.select_date_mult);
+        }
     }
 }

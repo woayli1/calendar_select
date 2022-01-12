@@ -1,4 +1,6 @@
-package com.woayli1.library;
+package com.woayli1.library.callback;
+
+import com.woayli1.library.entity.DayTimeEntity;
 
 /**
  * Created by richzjc on 18/3/14.

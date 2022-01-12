@@ -1,9 +1,12 @@
-package com.woayli1.library;
+package com.woayli1.library.adapter;
 
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.woayli1.library.R;
+import com.woayli1.library.entity.MonthTimeEntity;
 
 /**
  * Created by richzjc on 18/3/13.

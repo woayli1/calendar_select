@@ -1,6 +1,10 @@
-package com.woayli1.library;
+package com.woayli1.library.listener;
 
 import android.view.View;
+
+import com.woayli1.library.CalendarSelectView;
+import com.woayli1.library.adapter.OuterRecycleAdapter;
+import com.woayli1.library.entity.DayTimeEntity;
 
 import java.util.Calendar;
 
@@ -10,11 +14,11 @@ import java.util.Calendar;
 
 public class DateOnclickListener implements View.OnClickListener {
 
-    private int                 selectType;
-    private DayTimeEntity       startDayTime;
-    private DayTimeEntity       endDayTime;
+    private int selectType;
+    private DayTimeEntity startDayTime;
+    private DayTimeEntity endDayTime;
     private OuterRecycleAdapter outAdapter;
-    private DayTimeEntity       timeEntity;
+    private DayTimeEntity timeEntity;
 
     public DateOnclickListener(int selectType, DayTimeEntity startDayTime, DayTimeEntity endDayTime, OuterRecycleAdapter adapter) {
         this.selectType = selectType;

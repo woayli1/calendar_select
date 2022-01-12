@@ -1,4 +1,4 @@
-package com.woayli1.library;
+package com.woayli1.library.entity;
 
 import android.os.Parcel;
 import android.os.Parcelable;

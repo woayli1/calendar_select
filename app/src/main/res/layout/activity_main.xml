@@ -4,38 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.woayli1.calendar.MainActivity">
 
     <TextView
         android:id="@+id/single"
         android:layout_width="match_parent"
-        android:background="#000000"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:text="single"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:background="#000000"
+        android:gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:gravity="center"
-        />
+        android:text="single"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/mult"
         android:layout_width="match_parent"
-        android:background="#000000"
-        android:textColor="#ffffff"
-        android:textSize="20sp"
-        android:text="mult"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
+        android:background="#000000"
+        android:gravity="center"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        />
+        android:text="mult"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
 </LinearLayout>

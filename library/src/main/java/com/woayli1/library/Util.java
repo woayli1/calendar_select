@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.woayli1.library.entity.DayTimeEntity;
+import com.woayli1.library.entity.MonthTimeEntity;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.LinkedHashMap;
@@ -67,17 +70,17 @@ public class Util {
         int position = monthPosition + 1;
 
         for (int i = 0; i < dayOfWeek - 1; i++) {
-            list.add(new DayTimeEntity(monthTimeEntity.year, monthTimeEntity.month, 0, position ++, monthPosition));
+            list.add(new DayTimeEntity(monthTimeEntity.year, monthTimeEntity.month, 0, position++, monthPosition));
         }
         calendar.add(Calendar.MONTH, 1);
         calendar.add(Calendar.DATE, -1);
         for (int i = 1; i <= calendar.get(Calendar.DAY_OF_MONTH); i++) {
-            list.add(new DayTimeEntity(monthTimeEntity.year, monthTimeEntity.month, i, position ++, monthPosition));
+            list.add(new DayTimeEntity(monthTimeEntity.year, monthTimeEntity.month, i, position++, monthPosition));
         }
 
         dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
         for (int i = 0; i < 7 - dayOfWeek; i++) {
-            list.add(new DayTimeEntity(monthTimeEntity.year, monthTimeEntity.month, 0, position ++, monthPosition));
+            list.add(new DayTimeEntity(monthTimeEntity.year, monthTimeEntity.month, 0, position++, monthPosition));
         }
         return list;
     }
@@ -121,8 +124,8 @@ public class Util {
         return number < 10 ? "0" + number : "" + number;
     }
 
-    public static int preCount(DayTimeEntity dayTimeEntity){
-        if(dayTimeEntity == null || dayTimeEntity.day == 0)
+    public static int preCount(DayTimeEntity dayTimeEntity) {
+        if (dayTimeEntity == null || dayTimeEntity.day == 0)
             return 0;
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, dayTimeEntity.year);

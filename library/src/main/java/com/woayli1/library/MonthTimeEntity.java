@@ -1,4 +1,4 @@
-package com.rich.library;
+package com.woayli1.library;
 
 /**
  * Created by richzjc on 18/3/13.

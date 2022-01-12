@@ -1,8 +1,9 @@
-package com.rich.library;
+package com.woayli1.library;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by richzjc on 18/3/13.

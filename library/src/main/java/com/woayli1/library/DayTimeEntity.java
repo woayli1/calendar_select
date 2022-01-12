@@ -1,4 +1,4 @@
-package com.rich.library;
+package com.woayli1.library;
 
 import android.os.Parcel;
 import android.os.Parcelable;

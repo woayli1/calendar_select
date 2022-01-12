@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.rich.library.CalendarSelectView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.woayli1.library.CalendarSelectView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/calendar_select"
     android:layout_width="match_parent"
@@ -8,4 +8,4 @@
     app:locate_position="today"
     app:select_type="single">
 
-</com.rich.library.CalendarSelectView>
+</com.woayli1.library.CalendarSelectView>

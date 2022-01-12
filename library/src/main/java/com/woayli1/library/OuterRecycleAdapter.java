@@ -1,9 +1,10 @@
-package com.rich.library;
+package com.woayli1.library;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Calendar;
 import java.util.HashMap;

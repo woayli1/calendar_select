@@ -1,4 +1,4 @@
-package com.rich.calendar;
+package com.woayli1.calendar;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
